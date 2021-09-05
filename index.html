@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Nomad coder Vanilla js Chanllenge</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+  <h1> Nomad coder, javascript challenge - Final homework</h1>  
+    <form class="hidden" id="login-form">
+        <input
+          required
+          maxlength="15"
+          type="text"
+          placeholder="What is your name?"
+        />
+        <input type="submit" value="Log In" />
+      </form>
+     <form class="hidden" id="logout-form">
+      
+      <div >
+      <span class="hidden" id="greeting"> </span>
+      <span><input type="submit" value="Log Out" /></span>
+     </div>
+      </form>
+      
+      
+      
+      <div id="clock">00:00:00</div>
+      <div id="weather">
+        <span></span>
+        <span></span>
+      </div>
+    
+    
+        <form id="todo-form" class="hidden">
+          <h2 id="todo-title"> </h2>
+          <input type="text" placeholder="Write a To Do and Press Enter" required />
+        </form>
+        <ul id="todo-list" ></ul>
+    
+    <script src="src/bgimg.js"></script>
+    <script src="src/loginandtodo.js"></script>
+    <script src="src/clock.js"></script>
+    <script src="src/weather.js"></script>
+  </body>
+</html>

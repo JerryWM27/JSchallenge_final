@@ -1,7 +1,5 @@
 const weather = document.querySelector("#weather span:first-child");
 const city = document.querySelector("#weather span:last-child");
-//const API_KEY = "241051bf13976dd3ddf8b8d9f247255e";
-//const API_KEY = "7f8835cc771e44cee4d79447498c1647";
 
 const API_KEY = "588aaace04e64486c4b53fcdc22c0b83";
 
@@ -16,7 +14,6 @@ function callWeather(lat,lon) {
       });
 }
 
-
 function onGeoOk(position) {
   const lat = position.coords.latitude;
   const lon = position.coords.longitude;
@@ -30,14 +27,9 @@ function onGeoError() {
 
 }
 
-//경도 1265930.664, 위도 3733 06.890
-
-//출처 : 서울문화투데이(http://www.sctoday.co.kr)
-
 if(!navigator.geolocation) {
     status.textContent = 'Geolocation is not supported by your browser';
   } else {
     status.textContent = 'Locating…';
     navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);
   }
-//navigator.geolocation.getCurrentPosition(onGeoOk, onGeoError);

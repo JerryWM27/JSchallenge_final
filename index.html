@@ -6,39 +6,40 @@
     <link rel="stylesheet" href="src/styles.css" />
   </head>
   <body>
-  <h1> Nomad coder, javascript challenge - Final homework</h1>  
+    <h1> Nomad coder, javascript challenge - Final homework</h1>  
+    
     <form class="hidden" id="login-form">
         <input
           required
           maxlength="15"
           type="text"
-          placeholder="What is your name?"
+          placeholder="Type your name."
         />
-        <input type="submit" value="Log In" />
+        <input type="submit" class = "logButton" value="Log In" />
       </form>
-     <form class="hidden" id="logout-form">
-      
-      <div >
-      <span class="hidden" id="greeting"> </span>
-      <span><input type="submit" value="Log Out" /></span>
-     </div>
-      </form>
-      
-      
-      
-      <div id="clock">00:00:00</div>
-      <div id="weather">
-        <span></span>
-        <span></span>
+    
+      <form class="hidden" id="logout-form">
+      <div>
+        <span class="hidden title" id="greeting"> </span>
+        <span><input type="submit" class = "logButton" value="Log Out" /></span>
       </div>
+    </form>
+    <br>  
+    <br>
+    <div id="clock" class="clock">00:00:00</div>
+    <div id="weather" class="clock">
+      <span></span>
+      <span></span>
+    </div>
     
-    
-        <form id="todo-form" class="hidden">
-          <h2 id="todo-title"> </h2>
-          <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list" ></ul>
-    
+        
+    <form id="todo-form" class="hidden">
+      <h2 id="todo-title" class="title"> </h2>
+      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    </form>
+ 
+    <ul id="todo-list" ></ul>
+
     <script src="src/bgimg.js"></script>
     <script src="src/loginandtodo.js"></script>
     <script src="src/clock.js"></script>
